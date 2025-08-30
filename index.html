@@ -3,15 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simulador de inscripción a un taller</title>
+    <title>Entregable 2 - Simulador</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- tu archivo de estilos -->
   </head>
   <body>
-    <h1>simulador de inscripción</h1>
-    <p>
-      Este simulador permite al usuario inscribirse a un taller. Deberá ingresar
-      su nombre, edad, y elegir entre varios talleres disponibles. Se validarán
-      los datos y se mostrará un mensaje final personalizado.
-    </p>
-    <script src="main.js"></script>
+    <header>
+      <h1>Simulador de Carrito de Compras</h1>
+    </header>
+
+    <main>
+      <!-- Formulario de entrada -->
+      <section id="formulario">
+        <h2>Agregar Producto</h2>
+        <form id="productoForm">
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre del producto"
+            required
+          />
+          <input type="number" id="precio" placeholder="Precio" required />
+          <button type="submit">Agregar</button>
+        </form>
+      </section>
+
+      <!-- Lista dinámica -->
+      <section id="lista">
+        <h2>Productos en el carrito</h2>
+        <ul id="productos"></ul>
+        <p id="total">Total: $0</p>
+        <button id="vaciar">Vaciar Carrito</button>
+      </section>
+    </main>
+
+    <!-- conexión con jS -->
+    <script src="js/main.js"></script>
   </body>
 </html>
